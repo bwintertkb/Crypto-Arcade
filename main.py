@@ -400,21 +400,7 @@ def check_coin_collisions(coins, ball):
 
 def display(symbol, player, floors, coins, buttons, start_time, pct_complete):
     WIN.fill(BLACK)
-
-    market_name_text = IN_GAME_FONT.render('SYMBOL: {}'.format(symbol), 1, WHITE)
-    WIN.blit(market_name_text, (5, IN_GAME_FONT.get_height() + 2))
-    pct_complete_text = IN_GAME_FONT.render('{}%'.format(pct_complete), 1, WHITE)
-    WIN.blit(pct_complete_text, (5, IN_GAME_FONT.get_height() * 2 + 4))
-
-    time_elapsed_text = IN_GAME_FONT.render('TIME ELAPSED (s): {}'.format(int(time.time() - start_time)), 1, WHITE)
-    WIN.blit(time_elapsed_text, (WIDTH - time_elapsed_text.get_width() - 10, IN_GAME_FONT.get_height() + 2))
-
-    player_points_text = IN_GAME_FONT.render('COINS: {}'.format(player.score), 1, WHITE)
-    WIN.blit(player_points_text, (5, IN_GAME_FONT.get_height() * 3 + 4))
-
-    for button in buttons:
-        button.draw()
-
+    
     player.draw()
 
     for floor in floors:
@@ -427,6 +413,21 @@ def display(symbol, player, floors, coins, buttons, start_time, pct_complete):
         elif not coin.collided:
             coin.draw()
     pygame.display.update()
+    
+    for button in buttons:
+        button.draw()
+        
+    market_name_text = IN_GAME_FONT.render('SYMBOL: {}'.format(symbol), 1, WHITE)
+    WIN.blit(market_name_text, (5, IN_GAME_FONT.get_height() + 2))
+    
+    pct_complete_text = IN_GAME_FONT.render('{}%'.format(pct_complete), 1, WHITE)
+    WIN.blit(pct_complete_text, (5, IN_GAME_FONT.get_height() * 2 + 4))
+
+    time_elapsed_text = IN_GAME_FONT.render('TIME ELAPSED (s): {}'.format(int(time.time() - start_time)), 1, WHITE)
+    WIN.blit(time_elapsed_text, (WIDTH - time_elapsed_text.get_width() - 10, IN_GAME_FONT.get_height() + 2))
+
+    player_points_text = IN_GAME_FONT.render('COINS: {}'.format(player.score), 1, WHITE)
+    WIN.blit(player_points_text, (5, IN_GAME_FONT.get_height() * 3 + 4))
 
 
 def player_abilities(buttons, player):
