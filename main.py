@@ -5,20 +5,20 @@ import numpy as np
 import time
 import random
 import os
-from crypto_game import *
+from crypto_arcade import *
 
 pygame.font.init()
 
 WIDTH, HEIGHT = 900, 500
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
-WIN_GAME = pygame.display.set_mode((WIDTH, HEIGHT))
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
 LIGHT_BLUE = (68, 85, 128)
 LIGHT_LIGHT_BLUE = (85, 105, 158)
-pygame.display.set_caption('Crypto Games')
+pygame.display.set_caption('Crypto Arcade')
 
 BAR_WIDTH = 60
+BAR_WIDTH_FIND_DIP = 15
 
 VEL_STEP = 15
 VEL_MAX = 300
@@ -33,12 +33,12 @@ MARKET_CHOICE_FONT = pygame.font.SysFont('comicsans', 55)
 space = pymunk.Space()
 space.gravity = 0, 460
 
-NUM_BALLS = 100
+NUM_BALLS = 150
 
 COINS_SPACING_MIN = 4
 COINS_SPACING_MAX = 18
 
-camera = [0,0]
+camera = [0, 0]
 
 BITCOIN_IMAGE = pygame.image.load(os.path.join('assets', 'bitcoin.png')).convert_alpha()
 BITCOIN_IMAGE = pygame.transform.scale(BITCOIN_IMAGE, (37, 37))
@@ -50,9 +50,9 @@ DOGECOIN_IMAGE = pygame.image.load(os.path.join('assets', 'dogecoin.png')).conve
 DOGECOIN_IMAGE = pygame.transform.scale(DOGECOIN_IMAGE, (int(31), 31))
 
 COIN_INFO = [
-    {'image': BITCOIN_IMAGE, 'x offset': 19, 'y offset': 19, 'scale': 1},
-    {'image': ETH_IMAGE, 'x offset': 15, 'y offset': 16, 'scale': 0.7e1},
-    {'image': DOGECOIN_IMAGE, 'x offset': 16, 'y offset': 16, 'scale': 0.85e6}
+    {'image': BITCOIN_IMAGE, 'x offset': 19, 'y offset': 19, 'scale crypto rider': 1, 'scale find the dip': 1},
+    {'image': ETH_IMAGE, 'x offset': 15, 'y offset': 16, 'scale crypto rider': 0.7e1, 'scale find the dip': 0.7e1},
+    {'image': DOGECOIN_IMAGE, 'x offset': 16, 'y offset': 16, 'scale crypto rider': 0.85e6, 'scale find the dip': 1e5}
 ]
 
 
@@ -62,9 +62,6 @@ def clear_all_bodies(space):
             space.remove(body)
         return True
     return False
-
-
-
 
 
 def player_handler(ball, keys_pressed, space_pressed):
@@ -78,21 +75,24 @@ def player_handler(ball, keys_pressed, space_pressed):
     return space_pressed
 
 
-def draw_falling_balls(balls, texture):
+def draw_falling_balls(space, balls, texture):
+
     for ball in balls:
         ball.draw(camera)
+
         if ball.body.position[1] > HEIGHT + 15:
             ball.remove(space)
             balls.remove(ball)
-            balls.append(Ball(space, WIN, (random.randint(15, WIDTH - 15), random.randint(-2000, -15)), texture=texture))
+            balls.append(
+                Ball(space, WIN, (random.randint(15, WIDTH - 15), random.randint(-2000, -15)), texture=texture))
 
 
 def display_start_menu(buttons, balls):
     WIN.fill(BLACK)
     texture = random.choice(COIN_INFO)
-    draw_falling_balls(balls, texture)
+    draw_falling_balls(space, balls, texture)
 
-    game_title = TITLE_FONT.render('CRYPTO GAMES', 1, WHITE)
+    game_title = TITLE_FONT.render('CRYPTO ARCADE', 1, WHITE)
     WIN.blit(game_title, ((WIDTH - game_title.get_width()) // 2, HEIGHT // 4 - game_title.get_height()))
 
     buttons[0].draw()
@@ -112,7 +112,7 @@ def start_menu():
 
     start_button = Button(WIN, pos=(WIDTH // 2 - 300 // 2, HEIGHT // 2 - 150 // 2), width=300, height=150,
                           shape_color=(200, 200, 200),
-                          shape_highlight_color=(255, 200, 200), text = 'Start game')
+                          shape_highlight_color=(255, 200, 200), text='Choose game')
 
     buttons = [start_button]
 
@@ -121,7 +121,8 @@ def start_menu():
     balls = []
     for i in range(NUM_BALLS):
         balls.append(
-            Ball(space, WIN, (random.randint(15, WIDTH - 15), random.randint(-3000, -15)), texture=random.choice(COIN_INFO)))
+            Ball(space, WIN, (random.randint(15, WIDTH - 15), random.randint(-3000, -15)),
+                 texture=random.choice(COIN_INFO)))
 
     while run:
         clock.tick(FPS)
@@ -132,10 +133,49 @@ def start_menu():
                 pygame.quit()
 
         if start_button.is_clicked():
-            start_button.click(choose_market_option, balls)
+            for ball in balls:
+                ball.remove(space)
+            start_button.click(game_choice_menu)
+            # start_button.click(choose_market_option)
             run = False
 
         display_start_menu(buttons, balls)
+
+
+def game_choice_display(buttons):
+    WIN.fill(BLACK)
+
+    for button in buttons:
+        button.draw()
+
+    pygame.display.update()
+
+
+def game_choice_menu():
+    clock = pygame.time.Clock()
+    run = True
+
+    width = 350
+    height = 200
+    button_crypto_rider = Button(surface=WIN, pos=(WIDTH // 2 - width - 50, HEIGHT // 2 - height // 2), width=width,
+                                 height=height,
+                                 shape_highlight_color=(255, 200, 200), text='CRYPTO RIDER', font_size=35)
+
+    button_find_the_dip = Button(surface=WIN, pos=(WIDTH // 2 + 50, HEIGHT // 2 - height // 2), width=width,
+                                 height=height,
+                                 shape_highlight_color=(255, 200, 200), text='FIND THE DIP', font_size=35)
+
+    buttons = [button_crypto_rider, button_find_the_dip]
+    while run:
+
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                run = False
+                pygame.quit()
+
+        button_crypto_rider.click(choose_market_option, 'CRYPTO RIDER')
+        button_find_the_dip.click(choose_market_option, 'FIND THE DIP')
+        game_choice_display(buttons)
 
 
 def choose_market_display(buttons):
@@ -148,22 +188,19 @@ def choose_market_display(buttons):
     pygame.display.update()
 
 
-def choose_market_option(balls):
-    for ball in balls:
-        ball.remove(space)
-
+def choose_market_option(game_name='CRYPTO RIDER'):
     clock = pygame.time.Clock()
     run = True
 
     market_choice_BTCUSD = Button(WIN, pos=(WIDTH // 2 - 200 // 2, HEIGHT // 2 - 150 // 2), width=200, height=75,
                                   shape_color=(200, 200, 200),
-                                  shape_highlight_color=(255, 200, 200),text='BTC / USD')
+                                  shape_highlight_color=(255, 200, 200), text='BTC / USD')
     market_choice_ETHUSD = Button(WIN, pos=(WIDTH // 2 - 400 // 2 - 150, HEIGHT // 2 - 150 // 2), width=200, height=75,
                                   shape_color=(200, 200, 200),
-                                  shape_highlight_color=(255, 200, 200),text='ETH / USD')
+                                  shape_highlight_color=(255, 200, 200), text='ETH / USD')
     market_choice_DOGEUSD = Button(WIN, pos=(WIDTH // 2 + 150, HEIGHT // 2 - 150 // 2), width=200, height=75,
                                    shape_color=(200, 200, 200),
-                                   shape_highlight_color=(255, 200, 200),text='DOGE / USD')
+                                   shape_highlight_color=(255, 200, 200), text='DOGE / USD')
 
     buttons = [market_choice_BTCUSD, market_choice_ETHUSD, market_choice_DOGEUSD]
     while run:
@@ -173,14 +210,14 @@ def choose_market_option(balls):
                 run = False
                 pygame.quit()
 
-        buttons[0].click(loading_screen, 'BTCUSDT')
-        buttons[1].click(loading_screen, 'ETHUSDT')
-        buttons[2].click(loading_screen, 'DOGEUSDT')
+        buttons[0].click(loading_screen, symbol='BTCUSDT', game_name=game_name)
+        buttons[1].click(loading_screen, symbol='ETHUSDT', game_name=game_name)
+        buttons[2].click(loading_screen, symbol='DOGEUSDT', game_name=game_name)
 
         choose_market_display(buttons)
 
 
-def loading_screen(symbol='BTCUSDT'):
+def loading_screen(symbol='BTCUSDT', game_name='CRYPTO RIDER'):
     WIN.fill(BLACK)
     loading_text = TITLE_FONT.render('Getting data...', 1, WHITE)
     WIN.blit(loading_text, (WIDTH // 2 - loading_text.get_width() // 2, HEIGHT // 2 - loading_text.get_height() // 2))
@@ -196,7 +233,10 @@ def loading_screen(symbol='BTCUSDT'):
     data = Get_data(symbol, timeframe, start_date, end_date)
     close_prices = np.array(data.close_prices)
 
-    main(close_prices, symbol)
+    if game_name == 'CRYPTO RIDER':
+        main(close_prices, symbol, game_name)
+    elif game_name == 'FIND THE DIP':
+        main_find_the_dip(close_prices, symbol, game_name)
 
 
 def get_coin_info(symbol):
@@ -212,10 +252,16 @@ def get_coin_info(symbol):
         return False
 
 
-def get_bar_coords(bar_width, close_prices, symbol):
+def get_bar_coords(bar_width, close_prices, symbol, game_name):
     coin_info = get_coin_info(symbol)
     x_coords = [i * bar_width for i in range(close_prices.__len__())]
-    return list(zip(x_coords, close_prices * coin_info['scale']))
+
+    if game_name == 'CRYPTO RIDER':
+        scale = coin_info['scale crypto rider']
+    elif game_name == 'FIND THE DIP':
+        scale = coin_info['scale find the dip']
+
+    return list(zip(x_coords, close_prices * scale))
 
 
 def check_coin_collisions(coins, ball):
@@ -252,26 +298,28 @@ def display(symbol, player, floors, coins, buttons, start_time, pct_complete):
 
     player_points_text = IN_GAME_FONT.render('COINS: {}'.format(player.score), 1, WHITE)
     WIN.blit(player_points_text, (5, IN_GAME_FONT.get_height() * 3 + 4))
-    
+
     pygame.display.update()
+
 
 def player_abilities(buttons, player):
     buttons[0].click(player.super_jump)
     buttons[1].click(player.bouncy)
-    buttons[2].click(player.low_g,space)
+    buttons[2].click(player.mega_jump)
 
 
-def main(close_prices, symbol):
+def main(close_prices, symbol, game_name):
     clock = pygame.time.Clock()
     run = True
     space_pressed = False
 
     space.gravity = 0, 1200
 
-    bar_coords = get_bar_coords(BAR_WIDTH, -close_prices, symbol)
+    bar_coords = get_bar_coords(BAR_WIDTH, -close_prices, symbol, game_name)
 
     coin_image = get_coin_info(symbol)
-    player = Player(space = space, surface=WIN, start_coords=(bar_coords[1][0], bar_coords[1][1] - 50), texture=coin_image)
+    player = Player(space=space, surface=WIN, start_coords=(bar_coords[1][0], bar_coords[1][1] - 50),
+                    texture=coin_image)
 
     start_wall = StartWall(space, (-20, 1e10), (-5, -1e10))
 
@@ -293,22 +341,23 @@ def main(close_prices, symbol):
         coins.append(coin)
 
     # button_speed_super_jump = Button(WIN,)
-    width = 150
+    width = 165
     height = 30
     button_bouncy = Button(surface=WIN, pos=(WIDTH // 2 - width // 2, HEIGHT - height - 30), width=width, height=height,
                            text='Bouncy (5 coins)',
                            font_size=20, shape_highlight_color=(255, 200, 200))
 
-    button_super_jump = Button(surface=WIN, pos=(WIDTH // 2 - width // 2 - width - 50, HEIGHT - height - 30), width=width,
-                         height=height,
-                         text='Super jump (1 coin)',
-                         font_size=20, shape_highlight_color=(255, 200, 200))
-    button_low_gravity = Button(surface=WIN, pos=(WIDTH // 2 - width // 2 + width + 50, HEIGHT - height - 30),
+    button_super_jump = Button(surface=WIN, pos=(WIDTH // 2 - width // 2 - width - 50, HEIGHT - height - 30),
+                               width=width,
+                               height=height,
+                               text='Super jump (1 coin)',
+                               font_size=20, shape_highlight_color=(255, 200, 200))
+    button_mega_jump = Button(surface=WIN, pos=(WIDTH // 2 - width // 2 + width + 50, HEIGHT - height - 30),
                                 width=width, height=height,
-                                text='Low G (10 coins)',
+                                text='Mega jump (10 coins)',
                                 font_size=20, shape_highlight_color=(255, 200, 200))
 
-    buttons = [button_super_jump, button_bouncy, button_low_gravity]
+    buttons = [button_super_jump, button_bouncy, button_mega_jump]
     start_time = time.time()
     while run:
 
@@ -338,11 +387,163 @@ def main(close_prices, symbol):
         clock.tick(FPS)
 
 
+def main_find_the_dip(close_prices, symbol, game_name):
+    clear_all_bodies(space)
+    clock = pygame.time.Clock()
+    run = True
+    FPS = 144
+
+    space.gravity = 0, 1200
+
+    bar_coords = get_bar_coords(BAR_WIDTH_FIND_DIP, -close_prices, symbol, game_name)
+
+    coin_image = get_coin_info(symbol)
+    offsetx = 20
+    player = Player(space=space, surface=WIN, start_coords=(bar_coords[0][0]-offsetx, bar_coords[0][1] - 50),
+                    texture=coin_image)
+    player.shape.elasticity = 0.1
+    player_base = Floor(space=space, surface=WIN, p1=(bar_coords[0][0]-offsetx-15, bar_coords[0][1] - 50 + 15),
+                        p2=(bar_coords[0][0] - offsetx + 15, bar_coords[0][1] - 50 + 15))
+    floors = [player_base]
+
+    for idx in range(1, bar_coords.__len__()):
+        floors.append(Floor(space, WIN, bar_coords[idx - 1], bar_coords[idx]))
+
+    left_mouse_down = False
+    launched = False
+
+    exit_game_delay = 3 #in seconds
+    start_time = time.time()
+    points_time = 0
+    stop_game = False
+    first_run = False
+
+    while run:
+
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                run = False
+                pygame.quit()
+
+        camera[0] = player.body.position[0] - WIDTH // 2
+        camera[1] = player.body.position[1] - HEIGHT // 2
+
+        left_mouse_hold, _, _ = pygame.mouse.get_pressed()
+
+        points = int(abs(bar_coords[0][1] - 50) - abs(player.body.position[1]))
+        display_find_the_dip(player, floors, points)
+        if left_mouse_hold and not launched:
+            playerx,playery = player.body.position
+            centerx,centery = WIDTH // 2, HEIGHT // 2
+            mousex,mousey = pygame.mouse.get_pos()
+            delx = centerx-mousex
+            dely = centery-mousey
+            left_mouse_down = True
+            pygame.draw.line(WIN, WHITE, (playerx - camera[0], playery - camera[1]),
+                             (playerx - camera[0] - delx, playery - camera[1] - dely), width=5)
+            pygame.display.update()
+
+        if not left_mouse_hold and left_mouse_down and not launched:
+            player.launch(WIDTH,HEIGHT,delx,dely)
+            launched = True
+
+        space.step(1 / FPS)
+        clock.tick(FPS)
+
+        if launched and not first_run:
+            start_time = time.time()
+            first_run = True
+
+
+        if launched and time.time()-start_time>exit_game_delay and first_run:
+            if points == points_time:
+                stop_game = True
+            else:
+                points_time = points
+                start_time = time.time()
+
+        if launched and stop_game:
+            run = False
+            end_game_window_find_the_dip(symbol,points)
+
+            
+
+
+    # def get_ball_line(player):
+#     player.body.center
+
+def display_find_the_dip(player, floors, points):
+    WIN.fill(BLACK)
+
+    player.draw(camera)
+
+    for floor in floors:
+        floor.draw(camera)
+
+    points_display_text = IN_GAME_FONT.render('POINTS: {}'.format(points), 1, WHITE)
+    WIN.blit(points_display_text, (5, (5+points_display_text.get_height())))
+
+    pygame.display.update()
+
+def end_game_window_find_the_dip(symbol,points):
+    clear_all_bodies(space)
+    clock = pygame.time.Clock()
+
+    restart_button = Button(WIN, (WIDTH // 2 - 300 // 2, HEIGHT // 2, 300, 150), width=300, height=150,
+                            shape_color=(200, 200, 200),
+                            shape_highlight_color=(255, 200, 200),text='Restart game')
+    camera[0] = 0
+    camera[1] = 0
+
+    space.gravity = 0, 20
+
+    balls = []
+    for i in range(NUM_BALLS):
+        balls.append(
+            Ball(space, WIN, (random.randint(15, WIDTH - 15), random.randint(-2000, -15)),
+                 texture=get_coin_info(symbol)))
+
+    run = True
+    while run:
+
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                run = False
+                pygame.quit()
+
+        end_game_display_find_the_dip(restart_button, symbol, points, balls)
+        if restart_button.is_clicked():
+            for ball in balls:
+                ball.remove(space)
+
+            restart_button.click(start_menu)
+
+            run = False
+
+        space.step(1 / FPS)
+        clock.tick(FPS)
+
+def end_game_display_find_the_dip(button, symbol, points, balls):
+    WIN.fill(BLACK)
+
+    coin_image = get_coin_info(symbol)
+    draw_falling_balls(space, balls, coin_image)
+
+    time_display_text = IN_GAME_FONT.render('POINTS: {}'.format(points), 1, WHITE)
+    WIN.blit(time_display_text, (WIDTH // 1.7, (HEIGHT // 4)))
+    symbol_name_display = IN_GAME_FONT.render('SYMBOL: {}'.format(symbol), 1, WHITE)
+    WIN.blit(symbol_name_display, (WIDTH // 4.5, (HEIGHT // 4)))
+
+    button.draw()
+
+    space.step(1 / FPS)
+    pygame.display.update()
+
 def end_game_display(total_time, button, symbol, balls):
     WIN.fill(BLACK)
 
     coin_image = get_coin_info(symbol)
-    draw_falling_balls(balls, coin_image)
+    draw_falling_balls(space, balls, coin_image)
 
     time_display_text = IN_GAME_FONT.render('TIME: {} SECONDS'.format(total_time), 1, WHITE)
     WIN.blit(time_display_text, (WIDTH // 1.7, (HEIGHT // 4)))
@@ -367,9 +568,9 @@ def end_game_window(start_time, symbol):
 
     space.gravity = 0, 2
 
-    balls_end_display = []
+    balls = []
     for i in range(NUM_BALLS):
-        balls_end_display.append(
+        balls.append(
             Ball(space, WIN, (random.randint(15, WIDTH - 15), random.randint(-2000, -15)),
                  texture=get_coin_info(symbol)))
 
@@ -381,9 +582,9 @@ def end_game_window(start_time, symbol):
                 run = False
                 pygame.quit()
 
-        end_game_display(total_time, restart_button, symbol, balls_end_display)
+        end_game_display(total_time, restart_button, symbol, balls)
         if restart_button.is_clicked():
-            for ball in balls_end_display:
+            for ball in balls:
                 ball.remove(space)
 
             restart_button.click(start_menu)

@@ -2,6 +2,7 @@ import pygame
 import pymunk
 import time
 from operator import sub
+import numpy as np
 
 
 
@@ -44,7 +45,7 @@ class Button():
             pygame.draw.rect(self.surface, self.shape_highlight_color, self.button)
         self.add_text()
 
-    def click(self, func, *args):
+    def click(self, func, *args, **kwargs):
         mousex, mousey = pygame.mouse.get_pos()
         (leftclick, _, _) = pygame.mouse.get_pressed()
         if self.button.x <= mousex <= self.button.x + self.button.width and \
@@ -52,7 +53,7 @@ class Button():
                 leftclick and \
                 time.time() - self.click_time > self.click_delay:
             self.click_time = time.time()
-            func(*args)
+            func(*args, **kwargs)
 
     def is_clicked(self):
         mousex, mousey = pygame.mouse.get_pos()
@@ -122,14 +123,27 @@ class Player(Ball):
             self.shape.elasticity = 1
             self.score -= 5
 
-    def low_g(self,space):
+    def mega_jump(self):
         if self.score >= 10:
-            space.gravity = 0, 700
+            self.body.velocity += 60, -7000
             self.score -= 10
+
+    def launch(self, window_width, window_height ,delx,dely):
+        max_speed = 5e1
+
+        abs_delx = np.abs(delx)
+        abs_dely = np.abs(dely)
+
+        xscale = (max_speed/window_width/2)*abs_delx
+        yscale = (max_speed/window_height/2)*abs_dely
+
+
+
+        self.body.velocity += delx*xscale, dely*yscale
 
 
 class Floor(Ball):
-    def __init__(self, space, surface, p1: tuple[int, int], p2: tuple[int, int], collision_number=None):
+    def __init__(self, space, surface, p1: tuple[int, int], p2: tuple[int, int], collision_number=None, colour = (255,0,0)):
         self.body = pymunk.Body(body_type=pymunk.Body.STATIC)
         self.shape = pymunk.Segment(self.body, p1, p2, 1)
         self.shape.elasticity = 1
@@ -137,11 +151,12 @@ class Floor(Ball):
         if collision_number:
             self.shape.collision_type = collision_number
         space.add(self.body, self.shape)
+        self.colour = colour
 
     def draw(self,camera):
         camerax = camera[0]
         cameray = camera[1]
-        pygame.draw.line(self.surface, (255, 0, 0), tuple(map(sub, self.shape.a, camera)), tuple(map(sub, self.shape.b, camera)),
+        pygame.draw.line(self.surface, self.colour, tuple(map(sub, self.shape.a, camera)), tuple(map(sub, self.shape.b, camera)),
                          width=5)
 
 
