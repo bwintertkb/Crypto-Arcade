@@ -9,7 +9,7 @@ from crypto_arcade import *
 
 pygame.font.init()
 
-WIDTH, HEIGHT = 900, 500
+WIDTH, HEIGHT = 1080, 700#900, 500
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
@@ -33,7 +33,7 @@ MARKET_CHOICE_FONT = pygame.font.SysFont('comicsans', 55)
 space = pymunk.Space()
 space.gravity = 0, 460
 
-NUM_BALLS = 150
+NUM_BALLS = 10
 
 COINS_SPACING_MIN = 4
 COINS_SPACING_MAX = 18
@@ -50,8 +50,8 @@ DOGECOIN_IMAGE = pygame.image.load(os.path.join('assets', 'dogecoin.png')).conve
 DOGECOIN_IMAGE = pygame.transform.scale(DOGECOIN_IMAGE, (int(31), 31))
 
 COIN_INFO = [
-    {'image': BITCOIN_IMAGE, 'x offset': 19, 'y offset': 19, 'scale crypto rider': 1, 'scale find the dip': 1},
-    {'image': ETH_IMAGE, 'x offset': 15, 'y offset': 16, 'scale crypto rider': 0.7e1, 'scale find the dip': 0.7e1},
+    {'image': BITCOIN_IMAGE, 'x offset': 19, 'y offset': 19, 'scale crypto rider': 1, 'scale find the dip': 0.3},
+    {'image': ETH_IMAGE, 'x offset': 15, 'y offset': 16, 'scale crypto rider': 0.7e1, 'scale find the dip': 0.3},
     {'image': DOGECOIN_IMAGE, 'x offset': 16, 'y offset': 16, 'scale crypto rider': 0.85e6, 'scale find the dip': 1e5}
 ]
 
@@ -135,6 +135,7 @@ def start_menu():
         if start_button.is_clicked():
             for ball in balls:
                 ball.remove(space)
+            del balls
             start_button.click(game_choice_menu)
             # start_button.click(choose_market_option)
             run = False
@@ -309,6 +310,7 @@ def player_abilities(buttons, player):
 
 
 def main(close_prices, symbol, game_name):
+    clear_all_bodies(space)
     clock = pygame.time.Clock()
     run = True
     space_pressed = False
@@ -321,7 +323,7 @@ def main(close_prices, symbol, game_name):
     player = Player(space=space, surface=WIN, start_coords=(bar_coords[1][0], bar_coords[1][1] - 50),
                     texture=coin_image)
 
-    start_wall = StartWall(space, (-20, 1e10), (-5, -1e10))
+    start_wall = StartWall(space, (bar_coords[0][0]-20, 1e10), (bar_coords[0][0]-5, -1e10))
 
     floors = []
     for idx in range(1, bar_coords.__len__()):
@@ -361,10 +363,7 @@ def main(close_prices, symbol, game_name):
     start_time = time.time()
     while run:
 
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                run = False
-                pygame.quit()
+
 
         camera[0] = player.body.position[0] - WIDTH // 2
         camera[1] = player.body.position[1] - HEIGHT // 2
@@ -385,6 +384,11 @@ def main(close_prices, symbol, game_name):
 
         space.step(1 / FPS)
         clock.tick(FPS)
+
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                run = False
+                pygame.quit()
 
 
 def main_find_the_dip(close_prices, symbol, game_name):
@@ -497,6 +501,10 @@ def end_game_window_find_the_dip(symbol,points):
 
     space.gravity = 0, 20
 
+    try:
+        del balls
+    except Exception:
+        print('Balls does not exist')
     balls = []
     for i in range(NUM_BALLS):
         balls.append(
@@ -516,6 +524,7 @@ def end_game_window_find_the_dip(symbol,points):
             for ball in balls:
                 ball.remove(space)
 
+            del balls
             restart_button.click(start_menu)
 
             run = False
@@ -550,7 +559,8 @@ def end_game_display(total_time, button, symbol, balls):
     symbol_name_display = IN_GAME_FONT.render('SYMBOL: {}'.format(symbol), 1, WHITE)
     WIN.blit(symbol_name_display, (WIDTH // 4.5, (HEIGHT // 4)))
 
-    button.draw('Restart game')
+    button.text = 'Restart game'
+    button.draw()
 
     space.step(1 / FPS)
     pygame.display.update()
@@ -568,6 +578,10 @@ def end_game_window(start_time, symbol):
 
     space.gravity = 0, 2
 
+    try:
+        del balls
+    except Exception:
+        print('Balls does not exist')
     balls = []
     for i in range(NUM_BALLS):
         balls.append(
@@ -586,7 +600,7 @@ def end_game_window(start_time, symbol):
         if restart_button.is_clicked():
             for ball in balls:
                 ball.remove(space)
-
+            del balls
             restart_button.click(start_menu)
 
             run = False
