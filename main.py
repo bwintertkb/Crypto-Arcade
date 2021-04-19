@@ -9,7 +9,7 @@ from crypto_arcade import *
 
 pygame.font.init()
 
-WIDTH, HEIGHT = 1080, 700#900, 500
+WIDTH, HEIGHT = 1080, 700  # 900, 500
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
@@ -20,6 +20,7 @@ pygame.display.set_caption('Crypto Arcade')
 BAR_WIDTH = 60
 BAR_WIDTH_FIND_DIP = 15
 
+global VEL_STEP, VEL_MAX
 VEL_STEP = 15
 VEL_MAX = 300
 BASE_ROTATION_SPEED = VEL_MAX
@@ -33,7 +34,18 @@ MARKET_CHOICE_FONT = pygame.font.SysFont('comicsans', 55)
 space = pymunk.Space()
 space.gravity = 0, 460
 
-NUM_BALLS = 10
+coll_type = 5
+
+
+def player_platform(arbiter, space, data):
+    print("you reached the goal!")
+    return True
+
+
+# h = space.add_collision_handler(5,5)
+# h.pre_solve = goal_reached
+
+NUM_BALLS = 150
 
 COINS_SPACING_MIN = 4
 COINS_SPACING_MAX = 18
@@ -52,7 +64,7 @@ DOGECOIN_IMAGE = pygame.transform.scale(DOGECOIN_IMAGE, (int(31), 31))
 COIN_INFO = [
     {'image': BITCOIN_IMAGE, 'x offset': 19, 'y offset': 19, 'scale crypto rider': 1, 'scale find the dip': 0.3},
     {'image': ETH_IMAGE, 'x offset': 15, 'y offset': 16, 'scale crypto rider': 0.7e1, 'scale find the dip': 0.3},
-    {'image': DOGECOIN_IMAGE, 'x offset': 16, 'y offset': 16, 'scale crypto rider': 0.85e6, 'scale find the dip': 1e5}
+    {'image': DOGECOIN_IMAGE, 'x offset': 16, 'y offset': 16, 'scale crypto rider': 0.85e6, 'scale find the dip': 5e4}
 ]
 
 
@@ -67,6 +79,7 @@ def clear_all_bodies(space):
 def player_handler(ball, keys_pressed, space_pressed):
     if keys_pressed[pygame.K_a] and ball.body.velocity[0] - VEL_STEP > -VEL_MAX: ball.body.velocity += -VEL_STEP, 0
     if keys_pressed[pygame.K_d] and ball.body.velocity[0] + VEL_STEP < VEL_MAX: ball.body.velocity += VEL_STEP, 0
+    if keys_pressed[pygame.K_s]: ball.body.velocity = 0, ball.body.velocity[1]
     if keys_pressed[pygame.K_SPACE] and not space_pressed:
         space_pressed = True
         ball.body.velocity += 0, -VEL_STEP * 10
@@ -74,9 +87,26 @@ def player_handler(ball, keys_pressed, space_pressed):
         space_pressed = False
     return space_pressed
 
+def player_handler_crypto_swinging(player, keys_pressed, space_pressed, start_time) -> bool:
+    if keys_pressed[pygame.K_a] and player.body.velocity[0] - VEL_STEP > -VEL_MAX: player.body.velocity += -VEL_STEP, 0
+    if keys_pressed[pygame.K_d] and player.body.velocity[0] + VEL_STEP < VEL_MAX: player.body.velocity += VEL_STEP, 0
+    if keys_pressed[pygame.K_s]: player.body.velocity = 0, player.body.velocity[1]
+
+    try:
+        if player.arbiter_info is not None and player.arbiter_info.shapes[0].collision_type == 5:
+            space_pressed = False
+        if keys_pressed[pygame.K_SPACE] and not space_pressed and time.time()-start_time[0]>0.2:
+            player.body.velocity += 0, -VEL_STEP*10
+            space_pressed = True
+            start_time[0] = time.time()
+            print('Pressed')
+    except:
+        print('Shape issue')
+
+    return space_pressed
+
 
 def draw_falling_balls(space, balls, texture):
-
     for ball in balls:
         ball.draw(camera)
 
@@ -156,17 +186,23 @@ def game_choice_menu():
     clock = pygame.time.Clock()
     run = True
 
-    width = 350
-    height = 200
-    button_crypto_rider = Button(surface=WIN, pos=(WIDTH // 2 - width - 50, HEIGHT // 2 - height // 2), width=width,
+    width = 250
+    height = 150
+    button_crypto_rider = Button(surface=WIN, pos=(WIDTH // 2 - width * 1.5 - 50, HEIGHT // 2 - height // 2),
+                                 width=width,
                                  height=height,
                                  shape_highlight_color=(255, 200, 200), text='CRYPTO RIDER', font_size=35)
 
-    button_find_the_dip = Button(surface=WIN, pos=(WIDTH // 2 + 50, HEIGHT // 2 - height // 2), width=width,
+    button_find_the_dip = Button(surface=WIN, pos=(WIDTH // 2 - width // 2, HEIGHT // 2 - height // 2), width=width,
                                  height=height,
                                  shape_highlight_color=(255, 200, 200), text='FIND THE DIP', font_size=35)
 
-    buttons = [button_crypto_rider, button_find_the_dip]
+    button_crypto_swinging = Button(surface=WIN, pos=(WIDTH // 2 + width // 2 + 50, HEIGHT // 2 - height // 2),
+                                    width=width,
+                                    height=height,
+                                    shape_highlight_color=(255, 200, 200), text='CRYPTO SWINGING', font_size=35)
+
+    buttons = [button_crypto_rider, button_find_the_dip, button_crypto_swinging]
     while run:
 
         for event in pygame.event.get():
@@ -174,8 +210,9 @@ def game_choice_menu():
                 run = False
                 pygame.quit()
 
-        button_crypto_rider.click(choose_market_option, 'CRYPTO RIDER')
-        button_find_the_dip.click(choose_market_option, 'FIND THE DIP')
+        button_crypto_rider.click(choose_market_option, button_crypto_rider.text)
+        button_find_the_dip.click(choose_market_option, button_find_the_dip.text)
+        button_crypto_swinging.click(choose_market_option, button_crypto_swinging.text)
         game_choice_display(buttons)
 
 
@@ -193,15 +230,20 @@ def choose_market_option(game_name='CRYPTO RIDER'):
     clock = pygame.time.Clock()
     run = True
 
+    if game_name == 'CRYPTO RIDER' or game_name == 'FIND THE DIP':
+        text = ['BTC / USD', 'ETH / USD', 'DOGE / USD']
+    elif game_name == 'CRYPTO SWINGING':
+        text = ['BTC', 'ETH', 'DOGE']
+
     market_choice_BTCUSD = Button(WIN, pos=(WIDTH // 2 - 200 // 2, HEIGHT // 2 - 150 // 2), width=200, height=75,
                                   shape_color=(200, 200, 200),
-                                  shape_highlight_color=(255, 200, 200), text='BTC / USD')
+                                  shape_highlight_color=(255, 200, 200), text=text[0])
     market_choice_ETHUSD = Button(WIN, pos=(WIDTH // 2 - 400 // 2 - 150, HEIGHT // 2 - 150 // 2), width=200, height=75,
                                   shape_color=(200, 200, 200),
-                                  shape_highlight_color=(255, 200, 200), text='ETH / USD')
+                                  shape_highlight_color=(255, 200, 200), text=text[1])
     market_choice_DOGEUSD = Button(WIN, pos=(WIDTH // 2 + 150, HEIGHT // 2 - 150 // 2), width=200, height=75,
                                    shape_color=(200, 200, 200),
-                                   shape_highlight_color=(255, 200, 200), text='DOGE / USD')
+                                   shape_highlight_color=(255, 200, 200), text=text[2])
 
     buttons = [market_choice_BTCUSD, market_choice_ETHUSD, market_choice_DOGEUSD]
     while run:
@@ -211,9 +253,14 @@ def choose_market_option(game_name='CRYPTO RIDER'):
                 run = False
                 pygame.quit()
 
-        buttons[0].click(loading_screen, symbol='BTCUSDT', game_name=game_name)
-        buttons[1].click(loading_screen, symbol='ETHUSDT', game_name=game_name)
-        buttons[2].click(loading_screen, symbol='DOGEUSDT', game_name=game_name)
+        if game_name == 'CRYPTO RIDER' or game_name == 'FIND THE DIP':
+            buttons[0].click(loading_screen, symbol='BTCUSDT', game_name=game_name)
+            buttons[1].click(loading_screen, symbol='ETHUSDT', game_name=game_name)
+            buttons[2].click(loading_screen, symbol='DOGEUSDT', game_name=game_name)
+        elif game_name == 'CRYPTO SWINGING':
+            buttons[0].click(main_crypto_swinging, symbol='BTCUSDT')
+            buttons[1].click(main_crypto_swinging, symbol='ETHUSDT')
+            buttons[2].click(main_crypto_swinging, symbol='DOGEUSDT')
 
         choose_market_display(buttons)
 
@@ -323,7 +370,7 @@ def main(close_prices, symbol, game_name):
     player = Player(space=space, surface=WIN, start_coords=(bar_coords[1][0], bar_coords[1][1] - 50),
                     texture=coin_image)
 
-    start_wall = StartWall(space, (bar_coords[0][0]-20, 1e10), (bar_coords[0][0]-5, -1e10))
+    start_wall = StartWall(space, (bar_coords[0][0] - 20, 1e10), (bar_coords[0][0] - 5, -1e10))
 
     floors = []
     for idx in range(1, bar_coords.__len__()):
@@ -355,15 +402,13 @@ def main(close_prices, symbol, game_name):
                                text='Super jump (1 coin)',
                                font_size=20, shape_highlight_color=(255, 200, 200))
     button_mega_jump = Button(surface=WIN, pos=(WIDTH // 2 - width // 2 + width + 50, HEIGHT - height - 30),
-                                width=width, height=height,
-                                text='Mega jump (10 coins)',
-                                font_size=20, shape_highlight_color=(255, 200, 200))
+                              width=width, height=height,
+                              text='Mega jump (10 coins)',
+                              font_size=20, shape_highlight_color=(255, 200, 200))
 
     buttons = [button_super_jump, button_bouncy, button_mega_jump]
     start_time = time.time()
     while run:
-
-
 
         camera[0] = player.body.position[0] - WIDTH // 2
         camera[1] = player.body.position[1] - HEIGHT // 2
@@ -403,10 +448,10 @@ def main_find_the_dip(close_prices, symbol, game_name):
 
     coin_image = get_coin_info(symbol)
     offsetx = 20
-    player = Player(space=space, surface=WIN, start_coords=(bar_coords[0][0]-offsetx, bar_coords[0][1] - 50),
+    player = Player(space=space, surface=WIN, start_coords=(bar_coords[0][0] - offsetx, bar_coords[0][1] - 50),
                     texture=coin_image)
     player.shape.elasticity = 0.1
-    player_base = Floor(space=space, surface=WIN, p1=(bar_coords[0][0]-offsetx-15, bar_coords[0][1] - 50 + 15),
+    player_base = Floor(space=space, surface=WIN, p1=(bar_coords[0][0] - offsetx - 15, bar_coords[0][1] - 50 + 15),
                         p2=(bar_coords[0][0] - offsetx + 15, bar_coords[0][1] - 50 + 15))
     floors = [player_base]
 
@@ -416,7 +461,7 @@ def main_find_the_dip(close_prices, symbol, game_name):
     left_mouse_down = False
     launched = False
 
-    exit_game_delay = 3 #in seconds
+    exit_game_delay = 3  # in seconds
     start_time = time.time()
     points_time = 0
     stop_game = False
@@ -437,18 +482,18 @@ def main_find_the_dip(close_prices, symbol, game_name):
         points = int(abs(bar_coords[0][1] - 50) - abs(player.body.position[1]))
         display_find_the_dip(player, floors, points)
         if left_mouse_hold and not launched:
-            playerx,playery = player.body.position
-            centerx,centery = WIDTH // 2, HEIGHT // 2
-            mousex,mousey = pygame.mouse.get_pos()
-            delx = centerx-mousex
-            dely = centery-mousey
+            playerx, playery = player.body.position
+            centerx, centery = WIDTH // 2, HEIGHT // 2
+            mousex, mousey = pygame.mouse.get_pos()
+            delx = centerx - mousex
+            dely = centery - mousey
             left_mouse_down = True
             pygame.draw.line(WIN, WHITE, (playerx - camera[0], playery - camera[1]),
                              (playerx - camera[0] - delx, playery - camera[1] - dely), width=5)
             pygame.display.update()
 
         if not left_mouse_hold and left_mouse_down and not launched:
-            player.launch(WIDTH,HEIGHT,delx,dely)
+            player.launch(WIDTH, HEIGHT, delx, dely)
             launched = True
 
         space.step(1 / FPS)
@@ -458,8 +503,7 @@ def main_find_the_dip(close_prices, symbol, game_name):
             start_time = time.time()
             first_run = True
 
-
-        if launched and time.time()-start_time>exit_game_delay and first_run:
+        if launched and time.time() - start_time > exit_game_delay and first_run:
             if points == points_time:
                 stop_game = True
             else:
@@ -468,13 +512,147 @@ def main_find_the_dip(close_prices, symbol, game_name):
 
         if launched and stop_game:
             run = False
-            end_game_window_find_the_dip(symbol,points)
-
-            
-
+            end_game_window_find_the_dip(symbol, points)
 
     # def get_ball_line(player):
-#     player.body.center
+
+
+def create_crypto_swinging_course() -> list['box objects']:
+    num_boxes = 20
+    boxes = []
+    coords = 70, -180
+    rand_x = 0
+    rand_y = 0
+
+    width = 20
+    height = 20
+    for i in range(num_boxes):
+        box = Box(WIN, (coords[0], coords[1]), width, height)
+        string_length = random.randint(70, 180)
+        box.add_string(length=string_length, num_elements=20)
+        platform_length = random.randint(35, 80)
+        box.add_platform(length=platform_length, colour=(255, 255, 255))
+        box.add2space(space)
+        boxes.append(box)
+        coords = coords[0] + random.randint(200, 250), coords[1] + random.randint(-50, 50)
+
+    return boxes
+
+
+def get_course_coordinates() -> list['dictionary']:
+    num_swings = 15000
+
+    coords = 70, -180
+
+    swing_info = []
+    for i in range(num_swings):
+        string_length = random.randint(70, 180)
+        platform_length = random.randint(35, 80)
+        swing = {
+            'coords': coords,
+            'string length': string_length,
+            'platform length': platform_length,
+            'created': False
+        }
+        swing_info.append(swing)
+        coords = coords[0] + random.randint(200, 260), coords[1] + random.randint(-70, 70)
+
+    return swing_info
+
+
+def create_boxes(space, player, screen_width, swing_info, boxes) -> None:
+    width = 20
+    height = 20
+
+    min_view = player.body.position.x - screen_width / 2 - width
+    max_view = player.body.position.x + screen_width / 2 + width
+
+    for idx, swing in enumerate(swing_info):
+        if min_view <= swing['coords'][0] <= max_view and not swing['created']:
+            box = Box(WIN, position=swing['coords'], width=width, height=height, index=idx)
+            box.add_string(length=swing['string length'], num_elements=20)
+            box.add_platform(length=swing['platform length'])
+            box.add2space(space)
+            swing['created'] = True
+            boxes[idx] = box
+
+        if swing['created']:
+            if min_view > swing['coords'][0] or max_view < swing['coords'][0]:
+                boxes[idx].remove(space)
+                boxes[idx] = None
+                swing['created'] = False
+
+
+def main_crypto_swinging(symbol):
+    global VEL_STEP, VEL_MAX
+    VEL_STEP = 15
+    VEL_MAX = 300
+
+    clear_all_bodies(space)
+    clock = pygame.time.Clock()
+
+    player = Player(space=space, surface=WIN, start_coords=(0, 0), start_velocity=(0, 0), rad=15,
+                    texture=get_coin_info(symbol))
+    player.shape.elasticity = 0
+    player.shape = pymunk.Poly.create_box(player.body, (15, 15))
+    player.add_collision_handler(space)
+
+    floor = Floor(space=space, surface=WIN,
+                  p1=(player.body.position.x - player.rad, player.body.position.y + player.rad),
+                  p2=(player.body.position.x + player.rad, player.body.position.y + player.rad), collision_number=5)
+
+    swing_info = get_course_coordinates()
+    boxes = [None] * swing_info.__len__()
+
+    run = True
+    space_pressed = True
+
+    space.gravity = 0, 350
+    start_time = [time.time()]
+
+    while run:
+
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                run = False
+                pygame.quit()
+
+        create_boxes(space, player, WIDTH, swing_info, boxes)
+
+        camera[0] = player.body.position[0] - WIDTH // 2
+        camera[1] = player.body.position[1] - HEIGHT // 2
+
+        keys_pressed = pygame.key.get_pressed()
+        space_pressed = player_handler_crypto_swinging(player, keys_pressed, space_pressed,start_time)
+
+        points = display_crypto_swinging(player, floor, boxes)
+        space.step(1 / FPS)
+        clock.tick(FPS)
+
+        if player.body.position.y >= 2000:
+            end_game_window_find_the_dip(symbol, points)
+            clear_all_bodies(space)
+            run = False
+
+
+def display_crypto_swinging(player, floor, boxes) -> int:
+    WIN.fill(BLACK)
+
+    floor.draw(camera)
+    for box in boxes:
+        if box is not None: box.draw(camera)
+
+    player.draw(camera)
+
+    points = int(player.body.position.x // 100)
+
+    points_display_text = IN_GAME_FONT.render('POINTS: {}'.format(points), 1, WHITE)
+    WIN.blit(points_display_text, (5, (5 + points_display_text.get_height())))
+
+    pygame.display.update()
+
+    return points
+
 
 def display_find_the_dip(player, floors, points):
     WIN.fill(BLACK)
@@ -485,17 +663,18 @@ def display_find_the_dip(player, floors, points):
         floor.draw(camera)
 
     points_display_text = IN_GAME_FONT.render('POINTS: {}'.format(points), 1, WHITE)
-    WIN.blit(points_display_text, (5, (5+points_display_text.get_height())))
+    WIN.blit(points_display_text, (5, (5 + points_display_text.get_height())))
 
     pygame.display.update()
 
-def end_game_window_find_the_dip(symbol,points):
+
+def end_game_window_find_the_dip(symbol, points):
     clear_all_bodies(space)
     clock = pygame.time.Clock()
 
     restart_button = Button(WIN, (WIDTH // 2 - 300 // 2, HEIGHT // 2, 300, 150), width=300, height=150,
                             shape_color=(200, 200, 200),
-                            shape_highlight_color=(255, 200, 200),text='Restart game')
+                            shape_highlight_color=(255, 200, 200), text='Restart game')
     camera[0] = 0
     camera[1] = 0
 
@@ -532,6 +711,7 @@ def end_game_window_find_the_dip(symbol,points):
         space.step(1 / FPS)
         clock.tick(FPS)
 
+
 def end_game_display_find_the_dip(button, symbol, points, balls):
     WIN.fill(BLACK)
 
@@ -547,6 +727,7 @@ def end_game_display_find_the_dip(button, symbol, points, balls):
 
     space.step(1 / FPS)
     pygame.display.update()
+
 
 def end_game_display(total_time, button, symbol, balls):
     WIN.fill(BLACK)
@@ -567,6 +748,7 @@ def end_game_display(total_time, button, symbol, balls):
 
 
 def end_game_window(start_time, symbol):
+    clear_all_bodies(space)
     total_time = round(time.time() - start_time, 2)
     clock = pygame.time.Clock()
 
