@@ -93,11 +93,11 @@ def player_handler_crypto_swinging(player, keys_pressed, space_pressed, start_ti
     if keys_pressed[pygame.K_s]: player.body.velocity = 0, player.body.velocity[1]
 
     try:
-        if player.arbiter_info is not None and player.arbiter_info.shapes[0].collision_type == 5:
-            space_pressed = False
-        if keys_pressed[pygame.K_SPACE] and not space_pressed and time.time()-start_time[0]>0.2:
-            player.body.velocity += 0, -VEL_STEP*10
-            space_pressed = True
+        if player.arbiter_info.is_first_contact and player.arbiter_info.shapes[0].collision_type == 5 and not player.jumped:
+            player.jumped = True
+        elif keys_pressed[pygame.K_SPACE] and player.jumped:# and time.time()-start_time[0]>0.2:
+            player.body.velocity += 0, -VEL_STEP*15
+            player.jumped = False
             start_time[0] = time.time()
             print('Pressed')
     except:
@@ -357,6 +357,10 @@ def player_abilities(buttons, player):
 
 
 def main(close_prices, symbol, game_name):
+    global VEL_STEP, VEL_MAX
+    VEL_STEP = 15
+    VEL_MAX = 300
+
     clear_all_bodies(space)
     clock = pygame.time.Clock()
     run = True
@@ -437,6 +441,10 @@ def main(close_prices, symbol, game_name):
 
 
 def main_find_the_dip(close_prices, symbol, game_name):
+    global VEL_STEP, VEL_MAX
+    VEL_STEP = 5
+    VEL_MAX = 100
+
     clear_all_bodies(space)
     clock = pygame.time.Clock()
     run = True
@@ -516,33 +524,10 @@ def main_find_the_dip(close_prices, symbol, game_name):
 
     # def get_ball_line(player):
 
-
-def create_crypto_swinging_course() -> list['box objects']:
-    num_boxes = 20
-    boxes = []
-    coords = 70, -180
-    rand_x = 0
-    rand_y = 0
-
-    width = 20
-    height = 20
-    for i in range(num_boxes):
-        box = Box(WIN, (coords[0], coords[1]), width, height)
-        string_length = random.randint(70, 180)
-        box.add_string(length=string_length, num_elements=20)
-        platform_length = random.randint(35, 80)
-        box.add_platform(length=platform_length, colour=(255, 255, 255))
-        box.add2space(space)
-        boxes.append(box)
-        coords = coords[0] + random.randint(200, 250), coords[1] + random.randint(-50, 50)
-
-    return boxes
-
-
 def get_course_coordinates() -> list['dictionary']:
     num_swings = 15000
 
-    coords = 70, -180
+    coords = 70, -75
 
     swing_info = []
     for i in range(num_swings):
@@ -555,7 +540,7 @@ def get_course_coordinates() -> list['dictionary']:
             'created': False
         }
         swing_info.append(swing)
-        coords = coords[0] + random.randint(200, 260), coords[1] + random.randint(-70, 70)
+        coords = coords[0] + random.randint(170, 300), coords[1] + random.randint(-30, 30)
 
     return swing_info
 
@@ -585,7 +570,7 @@ def create_boxes(space, player, screen_width, swing_info, boxes) -> None:
 
 def main_crypto_swinging(symbol):
     global VEL_STEP, VEL_MAX
-    VEL_STEP = 15
+    VEL_STEP = 10
     VEL_MAX = 300
 
     clear_all_bodies(space)
@@ -607,7 +592,7 @@ def main_crypto_swinging(symbol):
     run = True
     space_pressed = True
 
-    space.gravity = 0, 350
+    space.gravity = 0, 200
     start_time = [time.time()]
 
     while run:

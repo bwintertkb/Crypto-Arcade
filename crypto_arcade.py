@@ -15,7 +15,7 @@ class TimeFunction():
         self.func(*args, **kwargs)
         t2 = time.time()-t1
         print('Function {} run time {}'.format(self.func.__name__,t2-t2))
-        return self.func(*args, **kwargs)
+
 
 class Button():
     def __init__(self, surface, pos: tuple[int, int], width: int, height: int,
@@ -128,6 +128,7 @@ class Player(Ball):
         self.power_up = None
         self.shape.filter = pymunk.ShapeFilter(categories=0b1)
         self.shape.collision_type = 5
+        self.jumped = False
 
     def super_jump(self):
         if self.score >= 1:
