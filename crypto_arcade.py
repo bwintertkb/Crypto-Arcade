@@ -79,6 +79,7 @@ class Ball():
     def __init__(self, space, surface, start_coords: tuple, start_velocity: tuple = (0, 0),
                  rad: int = 15,
                  texture=None) -> None:
+
         self.body = pymunk.Body(body_type=pymunk.Body.DYNAMIC)
         self.body.position = start_coords
         self.body.velocity = start_velocity
