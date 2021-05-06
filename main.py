@@ -524,7 +524,7 @@ def main_find_the_dip(close_prices, symbol, game_name):
 
     # def get_ball_line(player):
 
-def get_course_coordinates() -> list['dictionary']:
+def get_course_coordinates() -> list:
     num_swings = 15000
 
     coords = 70, -75

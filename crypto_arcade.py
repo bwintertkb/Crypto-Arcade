@@ -18,11 +18,11 @@ class TimeFunction():
 
 
 class Button():
-    def __init__(self, surface, pos: tuple[int, int], width: int, height: int,
-                 shape_color: tuple[int, int, int] = (200, 200, 200),
-                 shape_highlight_color: tuple[int, int, int] = (200, 200, 200),
+    def __init__(self, surface, pos: tuple, width: int, height: int,
+                 shape_color: tuple = (200, 200, 200),
+                 shape_highlight_color: tuple = (200, 200, 200),
                  text: str = '', font: str = 'comicsans', font_size: int = 30,
-                 font_color: tuple[int, int, int] = (255, 255, 255)):
+                 font_color: tuple = (255, 255, 255)):
         self.surface = surface
         self.pos = pos
         self.width = width
@@ -76,9 +76,9 @@ class Button():
 
 
 class Ball():
-    def __init__(self, space, surface, start_coords: tuple[int, int], start_velocity: tuple[int, int] = (0, 0),
+    def __init__(self, space, surface, start_coords: tuple, start_velocity: tuple = (0, 0),
                  rad: int = 15,
-                 texture=None):
+                 texture=None) -> None:
         self.body = pymunk.Body(body_type=pymunk.Body.DYNAMIC)
         self.body.position = start_coords
         self.body.velocity = start_velocity
@@ -178,7 +178,7 @@ class Box(Ball):
 
     arbiter_info = None
 
-    def __init__(self, surface, position: tuple[int, int], width: int, height: int, colour=(100, 255, 100), index: int=0):
+    def __init__(self, surface, position: tuple, width: int, height: int, colour=(100, 255, 100), index: int=0):
         self.body = pymunk.Body(body_type=pymunk.Body.STATIC)
         self.body.position = (position[0] + width // 2, position[1] + height // 2)
         self.shape = pymunk.Poly.create_box(self.body, (width, height))
@@ -202,7 +202,7 @@ class Box(Ball):
         self.object_details = [details]
 
     def add_string(self, length: int = 5, num_elements: int = 5, thickness: float = 5,
-                   colour: tuple[int, int, int] = (100, 255, 100)) -> None:
+                   colour: tuple = (100, 255, 100)) -> None:
         self.length = length
         self.num_elements = num_elements if num_elements < length else length
         self.length_per_element = self.length / self.num_elements
@@ -237,13 +237,13 @@ class Box(Ball):
             element_y += self.length_per_element
             first_body = body
 
-    def get_string_objects(self) -> list['dictionary']:
+    def get_string_objects(self) -> list:
         string_objects = []
         for object in self.object_details:
             if object['type'] == 'string': string_objects.append(object)
         return string_objects
 
-    def get_platform_objects(self) -> list['dictionary']:
+    def get_platform_objects(self) -> list:
         platform_objects = []
         for object in self.object_details:
             if object['type'] == 'platform': platform_objects.append(object)
@@ -263,7 +263,7 @@ class Box(Ball):
         self.col_handler.pre_solve = Box.coll_pre_solve
 
     def add_platform(self, length: int = 30, thickness: float = 5,
-                     colour: tuple[int, int, int] = (100, 255, 100)) -> None:
+                     colour: tuple = (100, 255, 100)) -> None:
         if not any([object['type'] == 'string' for object in self.object_details]):
             raise NoStringObjectError()
 
@@ -326,7 +326,7 @@ class Box(Ball):
 
 
 class Floor(Ball):
-    def __init__(self, space, surface, p1: tuple[int, int], p2: tuple[int, int], collision_number=None,
+    def __init__(self, space, surface, p1: tuple, p2: tuple, collision_number=None,
                  colour=(255, 0, 0)):
         self.body = pymunk.Body(body_type=pymunk.Body.STATIC)
         self.shape = pymunk.Segment(self.body, p1, p2, 1)
@@ -346,7 +346,7 @@ class Floor(Ball):
 
 
 class StartWall(Ball):
-    def __init__(self, space, p1: tuple[int, int], p2: tuple[int, int], collision_number=None):
+    def __init__(self, space, p1: tuple, p2: tuple, collision_number=None):
         self.body = pymunk.Body(body_type=pymunk.Body.STATIC)
         self.shape = pymunk.Segment(self.body, p1, p2, 1)
         self.shape.elasticity = 1
@@ -356,7 +356,7 @@ class StartWall(Ball):
 
 
 class Coin():
-    def __init__(self, surface, pos: tuple[int, int] = (0, 0), rad: int = 15, texture=None, colour=(255, 255, 255)):
+    def __init__(self, surface, pos: tuple = (0, 0), rad: int = 15, texture=None, colour=(255, 255, 255)):
         self.surface = surface
         self.pos = pos
         self.rad = rad
@@ -365,7 +365,7 @@ class Coin():
         self.collided = False
         self.rect_shape = pygame.Rect(self.pos[0], self.pos[1], self.rad, self.rad)
 
-    def check_collision(self, ball_position: tuple[int, int]):
+    def check_collision(self, ball_position: tuple):
         if self.pos[0] <= ball_position[0] <= self.pos[0] + self.rad and \
                 self.pos[1] <= ball_position[1] <= self.pos[1] + self.rad:
             self.collided = True
