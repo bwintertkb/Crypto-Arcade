@@ -27,9 +27,9 @@ BASE_ROTATION_SPEED = VEL_MAX
 
 FPS = 144
 
-IN_GAME_FONT = pygame.font.SysFont('comicsans', 30)
-TITLE_FONT = pygame.font.SysFont('comicsans', 75)
-MARKET_CHOICE_FONT = pygame.font.SysFont('comicsans', 55)
+IN_GAME_FONT = pygame.font.SysFont('times', 30)
+TITLE_FONT = pygame.font.SysFont('times', 75)
+MARKET_CHOICE_FONT = pygame.font.SysFont('times', 55)
 
 space = pymunk.Space()
 space.gravity = 0, 460
@@ -44,7 +44,6 @@ def player_platform(arbiter, space, data):
 
 # h = space.add_collision_handler(5,5)
 # h.pre_solve = goal_reached
-
 NUM_BALLS = 150
 
 COINS_SPACING_MIN = 4
@@ -61,11 +60,9 @@ ETH_IMAGE = pygame.transform.scale(ETH_IMAGE, (30, 30))
 DOGECOIN_IMAGE = pygame.image.load(os.path.join('assets', 'dogecoin.png')).convert_alpha()
 DOGECOIN_IMAGE = pygame.transform.scale(DOGECOIN_IMAGE, (int(31), 31))
 
-COIN_INFO = [
-    {'image': BITCOIN_IMAGE, 'x offset': 19, 'y offset': 19, 'scale crypto rider': 1, 'scale find the dip': 0.3},
+COIN_INFO = [{'image': BITCOIN_IMAGE, 'x offset': 19, 'y offset': 19, 'scale crypto rider': 1, 'scale find the dip': 0.3},
     {'image': ETH_IMAGE, 'x offset': 15, 'y offset': 16, 'scale crypto rider': 0.7e1, 'scale find the dip': 0.3},
-    {'image': DOGECOIN_IMAGE, 'x offset': 16, 'y offset': 16, 'scale crypto rider': 0.85e6, 'scale find the dip': 5e4}
-]
+    {'image': DOGECOIN_IMAGE, 'x offset': 16, 'y offset': 16, 'scale crypto rider': 0.85e6, 'scale find the dip': 5e4}]
 
 
 def clear_all_bodies(space):
@@ -96,7 +93,7 @@ def player_handler_crypto_swinging(player, keys_pressed, space_pressed, start_ti
         if player.arbiter_info.is_first_contact and player.arbiter_info.shapes[0].collision_type == 5 and not player.jumped:
             player.jumped = True
         elif keys_pressed[pygame.K_SPACE] and player.jumped:# and time.time()-start_time[0]>0.2:
-            player.body.velocity += 0, -VEL_STEP*15
+            player.body.velocity += 0, -VEL_STEP * 15
             player.jumped = False
             start_time[0] = time.time()
             print('Pressed')
@@ -113,8 +110,7 @@ def draw_falling_balls(space, balls, texture):
         if ball.body.position[1] > HEIGHT + 15:
             ball.remove(space)
             balls.remove(ball)
-            balls.append(
-                Ball(space, WIN, (random.randint(15, WIDTH - 15), random.randint(-2000, -15)), texture=texture))
+            balls.append(Ball(space, WIN, (random.randint(15, WIDTH - 15), random.randint(-2000, -15)), texture=texture))
 
 
 def display_start_menu(buttons, balls):
@@ -150,8 +146,7 @@ def start_menu():
 
     balls = []
     for i in range(NUM_BALLS):
-        balls.append(
-            Ball(space, WIN, (random.randint(15, WIDTH - 15), random.randint(-3000, -15)),
+        balls.append(Ball(space, WIN, (random.randint(15, WIDTH - 15), random.randint(-3000, -15)),
                  texture=random.choice(COIN_INFO)))
 
     while run:
@@ -170,7 +165,10 @@ def start_menu():
             # start_button.click(choose_market_option)
             run = False
 
-        display_start_menu(buttons, balls)
+        try:
+            display_start_menu(buttons, balls)
+        except Exception as e:
+            print('Display balls error: {}'.format(e))
 
 
 def game_choice_display(buttons):
@@ -523,7 +521,6 @@ def main_find_the_dip(close_prices, symbol, game_name):
             end_game_window_find_the_dip(symbol, points)
 
     # def get_ball_line(player):
-
 def get_course_coordinates() -> list:
     num_swings = 15000
 
@@ -671,8 +668,7 @@ def end_game_window_find_the_dip(symbol, points):
         print('Balls does not exist')
     balls = []
     for i in range(NUM_BALLS):
-        balls.append(
-            Ball(space, WIN, (random.randint(15, WIDTH - 15), random.randint(-2000, -15)),
+        balls.append(Ball(space, WIN, (random.randint(15, WIDTH - 15), random.randint(-2000, -15)),
                  texture=get_coin_info(symbol)))
 
     run = True
@@ -751,8 +747,7 @@ def end_game_window(start_time, symbol):
         print('Balls does not exist')
     balls = []
     for i in range(NUM_BALLS):
-        balls.append(
-            Ball(space, WIN, (random.randint(15, WIDTH - 15), random.randint(-2000, -15)),
+        balls.append(Ball(space, WIN, (random.randint(15, WIDTH - 15), random.randint(-2000, -15)),
                  texture=get_coin_info(symbol)))
 
     run = True

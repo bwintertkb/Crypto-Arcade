@@ -21,7 +21,7 @@ class Button():
     def __init__(self, surface, pos: tuple, width: int, height: int,
                  shape_color: tuple = (200, 200, 200),
                  shape_highlight_color: tuple = (200, 200, 200),
-                 text: str = '', font: str = 'comicsans', font_size: int = 30,
+                 text: str = '', font: str = 'times', font_size: int = 30,
                  font_color: tuple = (255, 255, 255)):
         self.surface = surface
         self.pos = pos

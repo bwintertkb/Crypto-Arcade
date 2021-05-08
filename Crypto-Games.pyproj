@@ -25,7 +25,6 @@
     <Content Include="assets\eth.png" />
     <Content Include="build\main\warn-main.txt" />
     <Content Include="build\main\xref-main.html" />
-    <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="crypto_arcade.py" />
