@@ -285,47 +285,15 @@
    'c:\\users\\bartlomiej '
    'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\pkg_resources\\__init__.py',
    'PYMODULE'),
-  ('pkg_resources._vendor.appdirs',
+  ('pkg_resources._vendor',
    'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\appdirs.py',
-   'PYMODULE'),
-  ('pkg_resources._vendor.packaging._typing',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\_typing.py',
-   'PYMODULE'),
-  ('typing', 'c:\\python\\python37\\lib\\typing.py', 'PYMODULE'),
-  ('pkg_resources._vendor.packaging.markers',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\markers.py',
-   'PYMODULE'),
-  ('pkg_resources._vendor.packaging._structures',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\_structures.py',
-   'PYMODULE'),
-  ('pkg_resources._vendor.packaging.utils',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\utils.py',
-   'PYMODULE'),
-  ('pkg_resources._vendor.packaging.requirements',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\requirements.py',
-   'PYMODULE'),
-  ('pkg_resources._vendor.packaging',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\__init__.py',
-   'PYMODULE'),
-  ('pkg_resources._vendor.packaging._compat',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\_compat.py',
-   'PYMODULE'),
-  ('pkg_resources._vendor.packaging.specifiers',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\specifiers.py',
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\__init__.py',
    'PYMODULE'),
   ('pkg_resources._vendor.packaging.tags',
    'c:\\users\\bartlomiej '
    'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\tags.py',
    'PYMODULE'),
+  ('typing', 'c:\\python\\python37\\lib\\typing.py', 'PYMODULE'),
   ('distutils.util',
    'c:\\python\\python37\\lib\\distutils\\util.py',
    'PYMODULE'),
@@ -370,6 +338,38 @@
   ('distutils.errors',
    'c:\\python\\python37\\lib\\distutils\\errors.py',
    'PYMODULE'),
+  ('pkg_resources._vendor.packaging.specifiers',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\specifiers.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging.version',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\version.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\__init__.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging._compat',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\_compat.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging._typing',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\_typing.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging.__about__',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\__about__.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging.requirements',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\requirements.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging.markers',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\markers.py',
+   'PYMODULE'),
   ('pkg_resources._vendor.pyparsing',
    'c:\\users\\bartlomiej '
    'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\pyparsing.py',
@@ -389,17 +389,17 @@
   ('ctypes.macholib.framework',
    'c:\\python\\python37\\lib\\ctypes\\macholib\\framework.py',
    'PYMODULE'),
-  ('pkg_resources._vendor.packaging.version',
+  ('pkg_resources._vendor.packaging._structures',
    'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\version.py',
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\_structures.py',
    'PYMODULE'),
-  ('pkg_resources._vendor',
+  ('pkg_resources._vendor.appdirs',
    'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\__init__.py',
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\appdirs.py',
    'PYMODULE'),
-  ('pkg_resources._vendor.packaging.__about__',
+  ('pkg_resources._vendor.packaging.utils',
    'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\__about__.py',
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\utils.py',
    'PYMODULE'),
   ('sysconfig', 'c:\\python\\python37\\lib\\sysconfig.py', 'PYMODULE'),
   ('pkg_resources.extern',
@@ -906,837 +906,837 @@
    'c:\\users\\bartlomiej '
    'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\utils\\strptime.py',
    'PYMODULE'),
-  ('dateparser.data.date_translation_data.nus',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\nus.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.sbp',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\sbp.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.nyn',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\nyn.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.hr',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\hr.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.rwk',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\rwk.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.lg',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\lg.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.smn',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\smn.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.dua',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\dua.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.te',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\te.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.ps',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ps.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.ce',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ce.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.sr-Cyrl',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\sr-Cyrl.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.ca',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ca.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.pt',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\pt.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.ii',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ii.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.sn',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\sn.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.pa-Arab',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\pa-Arab.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.id',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\id.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.ee',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ee.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.az-Latn',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\az-Latn.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.ewo',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ewo.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.or',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\or.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.uz-Arab',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\uz-Arab.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.ha',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ha.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.ast',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ast.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.ru',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ru.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.vun',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\vun.py',
-   'PYMODULE'),
-  ('dateparser.data',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\__init__.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.om',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\om.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.am',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\am.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.fy',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\fy.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.th',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\th.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.ksf',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ksf.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.brx',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\brx.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.ckb',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ckb.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.lrc',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\lrc.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.kn',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\kn.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.nnh',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\nnh.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.hu',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\hu.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.fr',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\fr.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.bg',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\bg.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.ug',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ug.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.ki',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ki.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.mas',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\mas.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.gu',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\gu.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.ks',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ks.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.lo',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\lo.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.yo',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\yo.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.pa',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\pa.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.mr',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\mr.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.lu',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\lu.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.mer',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\mer.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.ti',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ti.py',
-   'PYMODULE'),
   ('dateparser.data.date_translation_data.kk',
    'c:\\users\\bartlomiej '
    'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\kk.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.fil',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\fil.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.zu',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\zu.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.kok',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\kok.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.it',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\it.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.se',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\se.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\__init__.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.nmg',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\nmg.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.mua',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\mua.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.chr',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\chr.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.hy',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\hy.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.bez',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\bez.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.bn',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\bn.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.agq',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\agq.py',
    'PYMODULE'),
   ('dateparser.data.date_translation_data.fa',
    'c:\\users\\bartlomiej '
    'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\fa.py',
    'PYMODULE'),
-  ('dateparser.data.date_translation_data.lkt',
+  ('dateparser.data.date_translation_data.fr',
    'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\lkt.py',
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\fr.py',
    'PYMODULE'),
-  ('dateparser.data.date_translation_data.pa-Guru',
+  ('dateparser.data.date_translation_data.ksf',
    'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\pa-Guru.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.sq',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\sq.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.ka',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ka.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.ses',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ses.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.fur',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\fur.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.bm',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\bm.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.teo',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\teo.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.sl',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\sl.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.bs-Latn',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\bs-Latn.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.bem',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\bem.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.lv',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\lv.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.eo',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\eo.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.be',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\be.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.kln',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\kln.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.eu',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\eu.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.mk',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\mk.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.my',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\my.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.tl',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\tl.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.zh-Hant',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\zh-Hant.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.ko',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ko.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.bs-Cyrl',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\bs-Cyrl.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.es',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\es.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.yue',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\yue.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.dsb',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\dsb.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.ff',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ff.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.cy',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\cy.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.zh-Hans',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\zh-Hans.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.ro',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ro.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.ksb',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ksb.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.kab',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\kab.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.jmc',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\jmc.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.hsb',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\hsb.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.et',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\et.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.nn',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\nn.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.sg',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\sg.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.en',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\en.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.az',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\az.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.wae',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\wae.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.uz',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\uz.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.mg',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\mg.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.gl',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\gl.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.el',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\el.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.xog',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\xog.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.da',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\da.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.twq',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\twq.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.mgo',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\mgo.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.naq',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\naq.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.shi-Latn',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\shi-Latn.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.hi',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\hi.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.gd',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\gd.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.az-Cyrl',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\az-Cyrl.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.lag',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\lag.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.mn',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\mn.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.ln',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ln.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.kea',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\kea.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.nb',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\nb.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.yav',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\yav.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.mgh',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\mgh.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.ak',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ak.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.ur',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ur.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.shi',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\shi.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.rn',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\rn.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.uk',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\uk.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.dz',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\dz.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.kw',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\kw.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.yi',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\yi.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.he',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\he.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.guz',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\guz.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.cgg',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\cgg.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.sv',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\sv.py',
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ksf.py',
    'PYMODULE'),
   ('dateparser.data.date_translation_data.saq',
    'c:\\users\\bartlomiej '
    'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\saq.py',
    'PYMODULE'),
-  ('dateparser.data.date_translation_data.so',
+  ('dateparser.data.date_translation_data.ne',
    'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\so.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.shi-Tfng',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\shi-Tfng.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.bs',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\bs.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.si',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\si.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.os',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\os.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.luo',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\luo.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.ky',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ky.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.bo',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\bo.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.ms',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ms.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.sk',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\sk.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.mzn',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\mzn.py',
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ne.py',
    'PYMODULE'),
   ('dateparser.data.date_translation_data.ebu',
    'c:\\users\\bartlomiej '
    'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ebu.py',
    'PYMODULE'),
-  ('dateparser.data.date_translation_data.sah',
+  ('dateparser.data.date_translation_data.fil',
    'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\sah.py',
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\fil.py',
    'PYMODULE'),
-  ('dateparser.data.date_translation_data.rof',
+  ('dateparser.data.date_translation_data.uz',
    'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\rof.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.qu',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\qu.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.lb',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\lb.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.cs',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\cs.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.kam',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\kam.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.ml',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ml.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.tzm',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\tzm.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.jgo',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\jgo.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.zh',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\zh.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.uz-Cyrl',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\uz-Cyrl.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.khq',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\khq.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.pl',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\pl.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.vi',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\vi.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.lt',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\lt.py',
-   'PYMODULE'),
-  ('dateparser.data.languages_info',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\languages_info.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.uz-Latn',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\uz-Latn.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.dyo',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\dyo.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.br',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\br.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.bas',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\bas.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.nd',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\nd.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.ja',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ja.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.seh',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\seh.py',
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\uz.py',
    'PYMODULE'),
   ('dateparser.data.date_translation_data.rm',
    'c:\\users\\bartlomiej '
    'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\rm.py',
    'PYMODULE'),
-  ('dateparser.data.date_translation_data.luy',
+  ('dateparser.data.date_translation_data.lag',
    'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\luy.py',
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\lag.py',
    'PYMODULE'),
-  ('dateparser.data.date_translation_data.zgh',
+  ('dateparser.data.date_translation_data.ha',
    'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\zgh.py',
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ha.py',
    'PYMODULE'),
-  ('dateparser.data.date_translation_data.mt',
+  ('dateparser.data.date_translation_data.ak',
    'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\mt.py',
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ak.py',
    'PYMODULE'),
-  ('dateparser.data.date_translation_data.km',
+  ('dateparser.data.date_translation_data.sl',
    'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\km.py',
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\sl.py',
    'PYMODULE'),
-  ('dateparser.data.date_translation_data.as',
+  ('dateparser.data.date_translation_data.eu',
    'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\as.py',
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\eu.py',
    'PYMODULE'),
-  ('dateparser.data.date_translation_data.de',
+  ('dateparser.data.date_translation_data.sr-Cyrl',
    'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\de.py',
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\sr-Cyrl.py',
    'PYMODULE'),
-  ('dateparser.data.date_translation_data.gv',
+  ('dateparser.data.date_translation_data.ka',
    'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\gv.py',
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ka.py',
    'PYMODULE'),
-  ('dateparser.data.date_translation_data.to',
+  ('dateparser.data.date_translation_data.yav',
    'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\to.py',
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\yav.py',
    'PYMODULE'),
-  ('dateparser.data.date_translation_data.ga',
+  ('dateparser.data.date_translation_data.pa-Guru',
    'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ga.py',
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\pa-Guru.py',
    'PYMODULE'),
-  ('dateparser.data.date_translation_data.af',
+  ('dateparser.data.date_translation_data.ca',
    'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\af.py',
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ca.py',
    'PYMODULE'),
-  ('dateparser.data.date_translation_data.gsw',
+  ('dateparser.data.date_translation_data.or',
    'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\gsw.py',
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\or.py',
    'PYMODULE'),
-  ('dateparser.data.date_translation_data.sw',
+  ('dateparser.data.date_translation_data.ml',
    'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\sw.py',
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ml.py',
    'PYMODULE'),
-  ('dateparser.data.date_translation_data.nl',
+  ('dateparser.data.date_translation_data.gl',
    'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\nl.py',
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\gl.py',
    'PYMODULE'),
-  ('dateparser.data.date_translation_data.sr-Latn',
+  ('dateparser.data.date_translation_data.ewo',
    'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\sr-Latn.py',
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ewo.py',
    'PYMODULE'),
-  ('dateparser.data.date_translation_data.ne',
+  ('dateparser.data.date_translation_data.cy',
    'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ne.py',
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\cy.py',
    'PYMODULE'),
-  ('dateparser.data.date_translation_data.ksh',
+  ('dateparser.data.date_translation_data.dyo',
    'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ksh.py',
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\dyo.py',
    'PYMODULE'),
-  ('dateparser.data.date_translation_data.kde',
+  ('dateparser.data.date_translation_data.fy',
    'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\kde.py',
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\fy.py',
    'PYMODULE'),
-  ('dateparser.data.date_translation_data.sr',
+  ('dateparser.data.date_translation_data.sbp',
    'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\sr.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.asa',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\asa.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.tr',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\tr.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.is',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\is.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.kl',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\kl.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.fi',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\fi.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.mfe',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\mfe.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.ig',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ig.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.ar',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ar.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.rw',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\rw.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.dje',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\dje.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.haw',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\haw.py',
-   'PYMODULE'),
-  ('dateparser.data.date_translation_data.ta',
-   'c:\\users\\bartlomiej '
-   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ta.py',
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\sbp.py',
    'PYMODULE'),
   ('dateparser.data.date_translation_data.dav',
    'c:\\users\\bartlomiej '
    'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\dav.py',
    'PYMODULE'),
+  ('dateparser.data.date_translation_data.pa-Arab',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\pa-Arab.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.br',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\br.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.as',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\as.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.ms',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ms.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.sah',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\sah.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.lo',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\lo.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.cgg',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\cgg.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.uz-Latn',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\uz-Latn.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.nb',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\nb.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.mn',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\mn.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.mzn',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\mzn.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.az-Latn',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\az-Latn.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.rn',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\rn.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.xog',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\xog.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.hr',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\hr.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.ur',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ur.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.ky',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ky.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.hi',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\hi.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.mer',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\mer.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.yue',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\yue.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.smn',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\smn.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.gv',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\gv.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.bas',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\bas.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.vi',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\vi.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.chr',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\chr.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.el',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\el.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.mgo',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\mgo.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.hu',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\hu.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.ga',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ga.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.sq',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\sq.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.shi',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\shi.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.dua',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\dua.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.kam',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\kam.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.hsb',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\hsb.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.uz-Cyrl',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\uz-Cyrl.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.si',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\si.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.id',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\id.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.mg',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\mg.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.lv',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\lv.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.kw',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\kw.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.twq',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\twq.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.mfe',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\mfe.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.is',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\is.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.he',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\he.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.yi',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\yi.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.agq',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\agq.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.tr',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\tr.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.tl',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\tl.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.nmg',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\nmg.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.seh',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\seh.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.mk',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\mk.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.am',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\am.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.zh-Hant',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\zh-Hant.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.os',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\os.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.be',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\be.py',
+   'PYMODULE'),
+  ('dateparser.data.languages_info',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\languages_info.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.lu',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\lu.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.rof',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\rof.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.en',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\en.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.lkt',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\lkt.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.da',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\da.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.te',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\te.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.lt',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\lt.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.it',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\it.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.guz',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\guz.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.yo',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\yo.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.lb',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\lb.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.ff',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ff.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.kln',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\kln.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.rw',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\rw.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.sr-Latn',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\sr-Latn.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.sr',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\sr.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.qu',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\qu.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.ckb',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ckb.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.az',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\az.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.sv',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\sv.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.gsw',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\gsw.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.khq',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\khq.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.af',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\af.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.my',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\my.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.ksb',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ksb.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.gd',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\gd.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.fi',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\fi.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.kok',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\kok.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.ko',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ko.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.ce',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ce.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.mua',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\mua.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.zh',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\zh.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.se',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\se.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.kab',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\kab.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.bs-Cyrl',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\bs-Cyrl.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.ug',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ug.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.mas',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\mas.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.fur',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\fur.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.bs-Latn',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\bs-Latn.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.ro',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ro.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.nn',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\nn.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.bm',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\bm.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.dje',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\dje.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.pl',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\pl.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.nyn',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\nyn.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.km',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\km.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.az-Cyrl',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\az-Cyrl.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.sk',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\sk.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.nd',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\nd.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.sw',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\sw.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\__init__.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.ru',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ru.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.lrc',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\lrc.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.wae',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\wae.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.mt',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\mt.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.om',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\om.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.ps',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ps.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.bn',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\bn.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.ig',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ig.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.kl',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\kl.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.mgh',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\mgh.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.dsb',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\dsb.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.bo',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\bo.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.ses',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ses.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.nl',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\nl.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.kea',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\kea.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.luy',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\luy.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.kn',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\kn.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.uk',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\uk.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.ja',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ja.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.naq',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\naq.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.bg',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\bg.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.ta',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ta.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.ln',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ln.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.asa',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\asa.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.teo',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\teo.py',
+   'PYMODULE'),
   ('dateparser.data.date_translation_data.fo',
    'c:\\users\\bartlomiej '
    'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\fo.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.vun',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\vun.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.zh-Hans',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\zh-Hans.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.uz-Arab',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\uz-Arab.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.to',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\to.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.ar',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ar.py',
+   'PYMODULE'),
+  ('dateparser.data',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\__init__.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.shi-Tfng',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\shi-Tfng.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.gu',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\gu.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.shi-Latn',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\shi-Latn.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.mr',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\mr.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.de',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\de.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.es',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\es.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.th',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\th.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.et',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\et.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.ee',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ee.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.sg',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\sg.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.nus',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\nus.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.nnh',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\nnh.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.lg',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\lg.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.ksh',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ksh.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.ti',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ti.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.ks',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ks.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.jmc',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\jmc.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.luo',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\luo.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.bem',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\bem.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.bs',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\bs.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.ii',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ii.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.so',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\so.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.pt',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\pt.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.kde',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\kde.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.haw',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\haw.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.hy',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\hy.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.tzm',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\tzm.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.cs',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\cs.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.brx',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\brx.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.pa',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\pa.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.ki',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ki.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.ast',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\ast.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.jgo',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\jgo.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.zu',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\zu.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.zgh',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\zgh.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.sn',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\sn.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.rwk',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\rwk.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.eo',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\eo.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.dz',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\dz.py',
+   'PYMODULE'),
+  ('dateparser.data.date_translation_data.bez',
+   'c:\\users\\bartlomiej '
+   'winter\\documents\\github\\crypto-games\\venv\\lib\\site-packages\\dateparser\\data\\date_translation_data\\bez.py',
    'PYMODULE'),
   ('dateparser.date',
    'c:\\users\\bartlomiej '
