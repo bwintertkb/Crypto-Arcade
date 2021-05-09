@@ -189,16 +189,16 @@ def game_choice_menu():
     button_crypto_rider = Button(surface=WIN, pos=(WIDTH // 2 - width * 1.5 - 50, HEIGHT // 2 - height // 2),
                                  width=width,
                                  height=height,
-                                 shape_highlight_color=(255, 200, 200), text='CRYPTO RIDER', font_size=35)
+                                 shape_highlight_color=(255, 200, 200), text='CRYPTO RIDER', font_size=25)
 
     button_find_the_dip = Button(surface=WIN, pos=(WIDTH // 2 - width // 2, HEIGHT // 2 - height // 2), width=width,
                                  height=height,
-                                 shape_highlight_color=(255, 200, 200), text='FIND THE DIP', font_size=35)
+                                 shape_highlight_color=(255, 200, 200), text='FIND THE DIP', font_size=25)
 
     button_crypto_swinging = Button(surface=WIN, pos=(WIDTH // 2 + width // 2 + 50, HEIGHT // 2 - height // 2),
                                     width=width,
                                     height=height,
-                                    shape_highlight_color=(255, 200, 200), text='CRYPTO SWINGING', font_size=35)
+                                    shape_highlight_color=(255, 200, 200), text='CRYPTO SWINGING', font_size=25)
 
     buttons = [button_crypto_rider, button_find_the_dip, button_crypto_swinging]
     while run:

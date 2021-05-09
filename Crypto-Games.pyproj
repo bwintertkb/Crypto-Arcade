@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{80d3169c-fa11-4dfe-bece-e29d6d061bd2}</ProjectGuid>
+    <ProjectGuid>{cae0aef8-5b8a-4826-8990-bdccca274cd3}</ProjectGuid>
     <ProjectHome />
     <StartupFile>main.py</StartupFile>
     <SearchPath />
@@ -12,6 +12,7 @@
     <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
     <LaunchProvider>Standard Python launcher</LaunchProvider>
     <InterpreterId>MSBuild|venv|$(MSBuildProjectFullPath)</InterpreterId>
+    <Name>Crypto-Games</Name>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
   <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
@@ -25,6 +26,8 @@
     <Content Include="assets\eth.png" />
     <Content Include="build\main\warn-main.txt" />
     <Content Include="build\main\xref-main.html" />
+    <Content Include="dogecoin.ico" />
+    <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="crypto_arcade.py" />
